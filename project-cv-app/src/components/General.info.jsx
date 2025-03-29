@@ -1,55 +1,56 @@
-import { useState } from "react";
-import InputField from "./InputField";
+import React, { useState } from "react";
 
-const GeneralInfo = () => {
-    const [GeneralInfo, setGeneralInfo] = useState({
-        name:"",
-        email:"",
-        phone:"",
-        address:"",
-        city:"",
-    });
+const GeneralInfo = ({ onGeneralInfoSubmit }) => {
+  const [generalInfo, setGeneralInfo] = useState({
+    name: "",
+    email: "",
+    phone: "",
+  });
 
-    const handleChange = (e) => {
-        const { name, value} = e.target;
-        setGeneralInfo((prev) => ({
-            ...prev,
-            [name]: value,
-        }));
-    };
+  const handleChange = (e) => {
+    setGeneralInfo({ ...generalInfo, [e.target.name]: e.target.value });
+  };
 
-    return (
-        <div className="general-info">
-            <h2>General Information</h2>
-            <inputField
-            Label="Name:"
-            type="text:"
-            value={GeneralInfo.name}
-            onChange={handleChange}
+  const handleSubmit = (e) => {
+    e.preventDefault();
+    onGeneralInfoSubmit(generalInfo); 
+  };
+
+  return (
+    <div className="general-info-container">
+      <h2>General Information</h2>
+      <form onSubmit={handleSubmit}>
+        <label>
+          Name:
+          <input
+            type="text"
             name="name"
-            />
-            <inputField
-            Label="Email:"
-            type="email:"
-            value={GeneralInfo.email}
+            value={generalInfo.name}
             onChange={handleChange}
+          />
+        </label>
+        <label>
+          Email:
+          <input
+            type="email"
             name="email"
-            />
-            <inputField
-            Label="Phone:"
-            type="text:"
-            value={GeneralInfo.phone}
+            value={generalInfo.email}
             onChange={handleChange}
+          />
+        </label>
+        <label>
+          Phone:
+          <input
+            type="text"
             name="phone"
-            />
-            <div className="summary">
-                <h3>Summary</h3>
-                <p><b>Name</b>{GeneralInfo.name}</p>
-                <p><b>Email</b>{GeneralInfo.email}</p>
-                <p><b>Phone</b>{GeneralInfo.phone}</p>
-         </div>
-   </div>
-    );
+            value={generalInfo.phone}
+            onChange={handleChange}
+          />
+        </label>
+        <button type="submit">Save</button>
+      </form>
+    </div>
+  );
 };
 
 export default GeneralInfo;
