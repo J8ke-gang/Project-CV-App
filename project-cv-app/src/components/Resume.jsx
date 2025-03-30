@@ -28,4 +28,3 @@ const Resume = ({ generalInfo, education, experience }) => {
 };
 
 export default Resume;
-

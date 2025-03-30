@@ -22,12 +22,16 @@ const App = () => {
   };
 
   return (
-    <div>
-      <h1>Resume Generator</h1>
+    <div className="info-container">
+      <h1 id="title">Resume Generator</h1>
       <GeneralInfo onGeneralInfoSubmit={handleGeneralInfoSubmit} />
       <EducationInfo onEducationSubmit={handleEducationSubmit} />
       <ExperienceInfo onExperienceSubmit={handleExperienceSubmit} />
-      <Resume generalInfo={generalInfo} education={education} experience={experience} />
+      <Resume
+        generalInfo={generalInfo}
+        education={education}
+        experience={experience}
+      />
     </div>
   );
 };
