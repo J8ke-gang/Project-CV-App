@@ -1,0 +1,30 @@
+{
+  "name": "project-cv-app",
+  "version": "1.0.0",
+  "description": "",
+  "homepage": "https://github.com/J8ke-gang/Project-CV-App#readme",
+  "bugs": {
+    "url": "https://github.com/J8ke-gang/Project-CV-App/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/J8ke-gang/Project-CV-App.git"
+  },
+  "license": "ISC",
+  "author": "",
+  "type": "commonjs",
+  "main": "main.jsx",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview"
+  },
+  "devDependencies": {
+    "@vitejs/plugin-react": "^4.3.4",
+    "vite": "^6.2.4"
+  },
+  "dependencies": {
+    "react": "^19.1.0",
+    "react-dom": "^19.1.0"
+  }
+}
