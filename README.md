@@ -1,14 +1,29 @@
-# React + Vite
+# CV App
 
-project Resume Generator works on mobile tablets and pc.
+A personal CV/resume web app built with [React](https://reactjs.org/) and deployed on [Vercel](https://vercel.com/). This project showcases your skills, work experience, education, and projects in a clean, simple, responsive layout.
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+## 🔗 Live Demo
 
-Currently, two official plugins are available:
+👉 [View the live app](https://project-cv-app-five.vercel.app/)
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## 📸 Preview
+![project-cv-app-five vercel app_](https://github.com/user-attachments/assets/fd7ac1d4-4d91-40ce-b5e8-7d1a34c17d54)
 
-## Expanding the ESLint configuration
+## 🚀 Features
 
-If you are developing a production application, we recommend using TypeScript and enable type-aware lint rules. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+- Responsive layout for mobile and desktop
+- Clean, minimal design
+- Sections for:
+  - Personal info
+  - Work experience
+  - Education
+  - Skills
+  - Projects
+- Deployed on Vercel for easy sharing
+
+## 🛠️ Tech Stack
+
+- **Framework:** React
+- **Build Tool:** Vite
+- **Deployment:** Vercel
+- **Styling:** CSS
